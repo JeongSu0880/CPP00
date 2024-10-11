@@ -6,14 +6,12 @@
 /*   By: jungslee <jungslee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 22:01:05 by jungslee          #+#    #+#             */
-/*   Updated: 2024/09/26 22:19:18 by jungslee         ###   ########.fr       */
+/*   Updated: 2024/10/10 21:17:15 by jungslee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_HPP
-# define CONTACT_HPP
-
-# include <string>
+#pragma once
+#include <string>
 
 class Contact
 {
@@ -38,5 +36,3 @@ class Contact
 		void setPhoneNumber(std::string phoneNumber);
 		void setDarkestSecret(std::string darkestSecret);
 };
-
-#endif

@@ -6,11 +6,19 @@
 /*   By: jungslee <jungslee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 21:43:09 by jungslee          #+#    #+#             */
-/*   Updated: 2024/09/25 21:14:14 by jungslee         ###   ########.fr       */
+/*   Updated: 2024/10/10 21:17:13 by jungslee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
+
+Contact::Contact()
+{	
+}
+
+Contact::~Contact()
+{
+}
 
 std::string Contact::getFirstName()
 {
