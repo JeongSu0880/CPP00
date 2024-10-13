@@ -15,8 +15,8 @@
 #include "Contact.hpp"
 #include <iostream>
 #include <iomanip>
-#include <limits>
 #include <cstdlib>
+#include <cstring>
 
 #define PRINT_WIDTH 10
 #define MAX_CONTACT_NUM 8

@@ -121,7 +121,7 @@ void	PhoneBook::Search()
 	}
 	std::string num = PhoneBook::getInput("열람할 연락처의 인덱스를 입력해주세요.");
 	const char *toChar = num.c_str();
-	int input = std::atoi(toChar);
+	int input = atoi(toChar);
 	while (!(1 <= input && input <= 8))
 		num = PhoneBook::getInput("올바른 인덱스 번호를 입력해주세요.");
 	if (this->contactCount < MAX_CONTACT_NUM && input > this->arrayIndex)
@@ -144,12 +144,11 @@ void	PhoneBook::Run()
 	while (!std::cin.eof())
 	{
 		command = PhoneBook::getInput("MENU : ADD / SEARCH / EXIT");
-		const char *toChar = command.c_str();
-		if (std::strcmp(toChar, "ADD") == 0)
+		if (command == "ADD")
 			this->Add();
-		else if (std::strcmp(toChar, "SEARCH") == 0)
+		else if (command == "SEARCH")
 			this->Search();
-		else if (std::strcmp(toChar, "EXIT") == 0)
+		else if (command == "EXIT")
 			this->Exit();
 		else
 		{
